@@ -143,9 +143,9 @@ def _initial_deployment():
             sudo('sudo usermod -a -G docker ec2-user')
 
     # sudo('yum install -y git')
-    if not exists('bbc_tool', verbose=True):
+    if not exists('ads', verbose=True):
         sudo('yum install -y git')
-        run('git clone <REPLACE git repo>')
+        run('git clone <from settings')
     else:
         update()
 
